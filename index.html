@@ -1,14 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<script>
-	function play() {
-		//do thing
-		var audio = document.getElementById("audio");
-		audio.play();
-    }
-</script>
-
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=devicewidth, initial-scae=1.0">
@@ -17,6 +8,13 @@
 </head>
 
 <body>
+	<script>
+		function play() {
+			//do thing (read status of "audio")
+			var audio = document.getElementById("audio");
+			audio.play();
+		}
+	</script>
 	<h1>HOLDENS WEB PAGE!!!!!!! :)</h1>
 	<p>
 		Hello this is holdens web page and I really like to be a web page because the web is a big part of the net and the net is really cool because I really like certain things about computers such as the internet, you know?
@@ -26,6 +24,6 @@
 		<source src="03 SEMATARY - TOY BARN.mp3">
 		Your Browser cannot display this, =(
 	</audio>
-	<input type="button" value="PLAYMUSIC" onclick="play()"/>
+	<input type="button" value="PLAYMUSIC" onclick="play()" />
 </body>
 </html>
