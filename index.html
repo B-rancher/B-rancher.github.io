@@ -2,7 +2,11 @@
 <html lang="en">
 
 <script>
-
+	function play() {
+		//do thing
+		var audio = document.getElementById("audio");
+		audio.play();
+    }
 </script>
 
 <head>
@@ -22,6 +26,6 @@
 		<source src="03 SEMATARY - TOY BARN.mp3">
 		Your Browser cannot display this, =(
 	</audio>
-	<input type="button" id="play" value="PLAYMUSIC" onclick="play("/>
+	<input type="button" value="PLAYMUSIC" onclick="play()"/>
 </body>
 </html>
