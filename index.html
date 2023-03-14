@@ -9,10 +9,15 @@
 
 <body>
 	<script>
-		function play() {
+		function playPause() {
 			//do thing (read status of "audio")
-			var audio = document.getElementById("audio");
-			audio.play();
+			mediaPlayer = document.getElementById("audio");
+            if (mediaPlayer.paused)
+                mediaPlayer.play();
+            $(playPause).hide();
+			else
+				mediaPlayer.pause();
+            $('skip').hide();
 		}
 	</script>
 	<h1>HOLDENS WEB PAGE!!!!!!! :)</h1>
@@ -24,6 +29,7 @@
 		<source src="03 SEMATARY - TOY BARN.mp3">
 		Your Browser cannot display this, =(
 	</audio>
-	<input type="button" value="PLAYMUSIC" onclick="play()" />
+	<input type="button" id="playpause" value="⏯" onclick="play()" />
+	<input type="button" id="skip" value="skip" />
 </body>
 </html>
