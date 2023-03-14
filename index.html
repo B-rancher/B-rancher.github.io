@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=devicewidth, initial-scale=1.0">
+	<meta name="viewport" content="width=devicewidth, initial-scae=1.0">
 	<title>HOLDENS WEB PAGE!!!!!!! :)</title>
 	<link rel="stylesheet" href="styles.css">
 </head>
@@ -11,19 +11,8 @@
 	<script>
 		function playPause() {
 			//do thing (read status of "audio")
-			mediaPlayer = document.getElementById("audio");
-			function playPause() {
-				var mediaPlayer = document.getElementById('play');
-				if (mediaPlayer.paused) {
-					mediaPlayer.play();
-					$('.pause-btn').show();
-					$('.play-btn').hide();
-				} else {
-					mediaPlayer.pause();
-					$('.play-btn').show();
-					$('.pause-btn').hide();
-				}
-			}
+			var audio = document.getElementById("audio");
+			audio.play();
 		}
 	</script>
 	<h1>HOLDENS WEB PAGE!!!!!!! :)</h1>
@@ -35,9 +24,7 @@
 		<source src="03 SEMATARY - TOY BARN.mp3">
 		Your Browser cannot display this, =(
 	</audio>
-	<input type="button" id="play-btn" value="▶&#x25B6;" onclick="play()" />
-	<input type="button" id="pause-btn" value="⏸&#x23F8;" />
-	<input type="button" id="skip-btn" value="⏩&#x23E9;" />
-	<input type="button" id="lock-btn" value="🔒&#xFE0E;" />
+	<input type="button" value="⏯" onclick="play()" />
+	<input type="button" value="" />
 </body>
 </html>
